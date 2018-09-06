@@ -122,9 +122,7 @@ install_and_cache_deps() {
     install_npm_deps
   fi
 
-  cp -r node_modules $cache_dir
   PATH=$assets_dir/node_modules/.bin:$PATH
-  install_bower_deps
 }
 
 install_npm_deps() {
